@@ -1,0 +1,44 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --heading-font : Poppins, Ariel, sans-serif;
+    --heading-weight : 700;
+
+    --body-font : 'Open Sans' , Ariel, sans-serif;
+    --body-weight-one : 400;
+    --body-weight-two : 600;
+    --body-weight-three : 700;
+
+    --icon-moon : url('https://fontawesome.com/');
+    --ion-icons : url('https://ionicons.com/');
+
+    --mobile-width : 375px;
+    --desktop-width : 1440px;
+
+    --clr-primary-lighter : hsl(322, 100%, 66%);
+    --clr-primary-lightest : hsl(321, 100%, 78%);
+    --clr-primary-light : hsl(0, 100%, 63%);
+
+    --clr-neutral-dark : hsl(192, 100%, 9%);
+    --clr-neutral : hsl(207, 100%, 98%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }  
