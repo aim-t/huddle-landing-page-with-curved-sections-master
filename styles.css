@@ -6,10 +6,12 @@
 }
 
 :root{
-    --heading-font : Poppins, Ariel, sans-serif;
+    --heading-font :  Poppins , Arial, sans-serif;
     --heading-weight : 700;
 
-    --body-font : 'Open Sans' , Ariel, sans-serif;
+    font-family:;
+
+    --body-font : 'Open Sans' , Arial, sans-serif;
     --body-weight-one : 400;
     --body-weight-two : 600;
     --body-weight-three : 700;
@@ -29,10 +31,12 @@
 }
 
 
-
-
-
-
+body{
+    font-family: var(--body-font);
+}
+footer{
+    background-color: var(--clr-neutral-dark);
+}
 
 
 
