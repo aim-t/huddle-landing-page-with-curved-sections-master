@@ -9,8 +9,6 @@
     --heading-font :  Poppins , Arial, sans-serif;
     --heading-weight : 700;
 
-    font-family:;
-
     --body-font : 'Open Sans' , Arial, sans-serif;
     --body-weight-one : 400;
     --body-weight-two : 600;
@@ -27,19 +25,40 @@
     --clr-primary-light : hsl(0, 100%, 63%);
 
     --clr-neutral-dark : hsl(192, 100%, 9%);
-    --clr-neutral : hsl(207, 100%, 98%);
+    --clr-neutral : hsl(210, 100%, 98%);
 }
 
 
 body{
     font-family: var(--body-font);
 }
-footer{
-    background-color: var(--clr-neutral-dark);
+
+.header-title,
+.stats,
+.section-container .section-title,
+.cta .cta-title
+{   
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);    
 }
 
+.newsletter-title{
+    font-weight: var(--body-weight-two);
+}
 
+footer{
+    background-color: var(--clr-neutral-dark);
+    color: var(--clr-neutral);
+}
+.twitter img {
+    border:1.5px solid var(--clr-neutral);
+    background-color: var(--clr-neutral);
+    border-radius: 1.3px;
+}
 
+.logo-container path{
+    fill: var(--clr-neutral);
+}
 
 
 
