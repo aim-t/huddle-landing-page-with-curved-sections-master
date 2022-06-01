@@ -61,6 +61,30 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+### Change color of svg files
+  There were multiple times where the color of svg needed to be different than the original file. This was achieved using the following methods:
+  1. Change the value of `fill` property directly in the svg file. This changes the color of the svg file wherever the file is linked or the modified file code is used
+  ```html
+    <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-2-4h24v24H-2z"/><path d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z" fill="#FFF"/></g></svg>
+  ```
+
+  2. Change the color dynamically by using the code of svg file instead of linking it in `img` block. The color can be changed using CSS. Select `path` for desired `svg` element using the parent element e.g `<div class="logo-container">` in CSS . The same svg file linked in `img` is not affected.
+  ```html
+  <div class="logo-container">
+    <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd"> 
+        <path d="M-2-4h24v24H-2z"/> 
+        <path d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z" fill="#FFF"/>
+      </g>
+    </svg>
+  </div>
+  ```
+  ```css
+  .logo-container path{
+    fill: red;
+  }
+  ```
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
