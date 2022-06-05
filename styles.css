@@ -93,8 +93,8 @@ img{
     align-items: center;
     justify-content: space-between;
     gap: 25px;
-    text-align: center;    
 
+    text-align: center;    
 }
 
 .header-title{
@@ -125,10 +125,23 @@ img{
 
 .stats-blocks-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    
-    padding: 8% 16% 0 6%;    
+    gap: 1em;
+
+    padding: 4em 0;    
+}
+
+.stats-block img{
+    max-width: 30%;
+}
+
+.communities{
+    padding-left: 3.3em;
+}
+
+.messages{
+    padding-right: 9em;
+    padding-top: 0;
 }
 
 .stats{
