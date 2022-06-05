@@ -84,6 +84,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
     fill: red;
   }
   ```
+### Keeping size of elements in mind
+ Don't use `align-items:center` without considering the difference in content of the children elements or the layout gets messed up. 
+  ![Messed Up](images/align-items.PNG)
+  ![How it is supposed to look](images/align-items-correct.PNG)
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
