@@ -106,7 +106,7 @@ img{
     max-width: 30em;
 }
 
-.cta{
+.get-started{
     color: var(--clr-neutral);
     background-color: var(--clr-primary-lighter);
     
@@ -141,7 +141,7 @@ img{
 }
 
 
-/*                  Grow Together                */
+/*                  Grow Together , Users, conversation              */
 
 .grow-container,
 .users-container{
@@ -179,6 +179,22 @@ img{
     padding-bottom: 5%;
 }
 
+
+/*                              cta section         */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.cta .cta-title{ 
+    font-size: 1.5em;
+}
 
 
 
