@@ -27,6 +27,8 @@
     --clr-neutral-dark : hsl(192, 100%, 9%);
     --clr-neutral : hsl(210, 100%, 98%);
 
+    --bg-clr : #FFF;
+
     --border: 1px solid red;
 }
 
@@ -139,6 +141,43 @@ img{
 }
 
 
+/*                  Grow Together                */
+
+.grow-container,
+.users-container{
+    background-color: var(--clr-neutral);
+}
+
+.grow-container .section-top-desktop-1 ,
+.users-container .section-top-desktop-2
+{
+    background-color: var(--bg-clr);
+    width: 100%;
+}
+
+.section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1.5% 15%;
+    gap:5em;
+}
+
+.section-title{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-weight: var(--body-weight-three);
+}
+
+.conversation-block{
+    order: 2;
+}
+
+.conversation-container{
+    padding-top: 5% ;
+    padding-bottom: 5%;
+}
 
 
 
@@ -160,10 +199,21 @@ img{
 
 
 
+/*                              footer                   */
+.footer .footer-svg-top{
+    background-color: #ffffff;
+    width: 100%;
+}
 
 footer{
     background-color: var(--clr-neutral-dark);
     color: var(--clr-neutral);
+
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 1em;
 }
 .twitter img {
     border:1.5px solid var(--clr-neutral);
