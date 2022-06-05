@@ -40,7 +40,6 @@ body{
 
 a{
     text-decoration: none;
-    border: var(--border);
 }
 
 img{
@@ -106,10 +105,12 @@ img{
     max-width: 30em;
 }
 
-.get-started{
+.get-started, 
+.subscribe-btn{
     color: var(--clr-neutral);
     background-color: var(--clr-primary-lighter);
-    
+}
+.get-started{    
     padding: 1em 4em;
     margin-top: 1%;
 
@@ -197,40 +198,12 @@ img{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*                              footer                   */
-.footer .footer-svg-top{
-    background-color: #ffffff;
-    width: 100%;
+.footer-svg-top{
+    background-color: #ffffff; 
+    margin-bottom: -1%;
 }
 
-footer{
-    background-color: var(--clr-neutral-dark);
-    color: var(--clr-neutral);
-
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 1em;
-}
 .twitter img {
     border:1.5px solid var(--clr-neutral);
     background-color: var(--clr-neutral);
@@ -241,8 +214,95 @@ footer{
     fill: var(--clr-neutral);
 }
 
+.footer{
+    background-color: var(--clr-neutral-dark);
+    color: var(--clr-neutral);
 
+    padding: 6% 15% 1em;
 
+    display: grid;
+    grid-template-rows: repeat(1fr,auto);
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em 35%;
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }  
+    align-content: center;
+    justify-content: space-around;
+
+    grid-template-areas: 
+        'footer-left footer-right'
+        'footer-left footer-right'
+        'footer-bottom footer-bottom';
+    
+
+}
+
+.footer-left-container{
+    grid-area: footer-left;
+}
+
+.footer-right-container{
+    grid-area: footer-right;
+}
+
+.attribution{
+    grid-area: footer-bottom;
+}
+
+.footer-content,
+.phone,
+.email{
+    font-size: 0.8em;
+}
+.footer-left-container,
+.footer-right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.phone ,
+.email{
+    display: flex;
+    gap: 1em;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+
+    padding-top: 2em;
+}
+
+.subscribe-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5em;
+
+    padding-top: 1em;
+}
+
+.subscribe-btn, 
+.subscribe-text{
+    border-radius: 3px;
+}
+
+.subscribe-text{
+    border-color: transparent;
+    width: 30ch;
+}
+
+.subscribe-btn{
+    padding: 1.2% 6%;
+    border: 3px solid var(--clr-primary-lighter);    
+}
+
+.attribution{
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+   
+}  
